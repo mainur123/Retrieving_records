@@ -39,8 +39,8 @@ Route::middleware(['auth:sanctum,web', 'verified'])->get('/dashboard', function 
 })->name('dashboard');
 
 Route::get('/installment', [InstallmentController::class, 'show']);
+// Route::get('/installment/store', [InstallmentController::class, 'addInstallments'])->name('installment.add');
 Route::post('/installment/store', [InstallmentController::class, 'addInstallments'])->name('installment.add');
-Route::get('/installment/store', [InstallmentController::class, 'addInstallments'])->name('installment.add');
 
 // Route::get('/installment', function () {
 //     return view('installment.create', ['users' => 'sad']);

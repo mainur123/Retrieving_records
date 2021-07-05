@@ -9,7 +9,7 @@
 </head>
 
 <div class="container">
-    <form method="post" action="{{ route('installment.add') }}" enctype="multipart/form-data">
+    <form method="post" action="{{ route('installment.add') }}"  enctype="multipart/form-data">
         @csrf
         <div class="row">
             <div class="form-group col">
